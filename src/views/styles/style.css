@@ -1,0 +1,204 @@
+.header {
+  background: #3ab383;
+  margin-bottom: 1em;
+
+  color: #fff;
+  text-align: center;
+}
+.header h1 {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 3rem;
+}
+.comments {
+  margin-left: 10px;
+}
+.box {
+  text-align: center;
+  position: relative;
+}
+.right-login {
+  display: block;
+}
+.btn {
+  display: inline-block;
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  margin-right: 6px;
+  padding: 6px 12px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn p {
+  font-size: 12px;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn:active {
+  opacity: 0.7;
+}
+.login-name {
+  padding: 0 10px;
+}
+.content {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 600px;
+}
+.form {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background: #f5f5f5;
+}
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+}
+.form-box input {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  height: 40px;
+  width: calc(100% - 10em);
+  margin: 0 0 0 30px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-style: none;
+  transition: 0.2s;
+}
+.form-box input:focus {
+  border: solid 1px #3ab383;
+  width: calc(100% - 7em);
+  border-radius: 60px;
+  outline: none;
+  box-shadow: 0 0 5px 1px #3ab383;
+}
+.form-box input::placeholder {
+  font-size: 16px;
+}
+.send {
+  width: 4rem;
+  height: 100%;
+  margin: 0 15px 0 5px;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+}
+.send-button {
+  font-size: 2rem;
+  color: #3ab383;
+}
+.send-button:hover {
+  color: #256e51;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.send-button:active {
+  color: #256e51;
+  transition: 0.2s;
+}
+.list {
+  margin-bottom: 100px;
+}
+.item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.8em;
+}
+.item-image img {
+  border-radius: 20px;
+  vertical-align: top;
+}
+.item-detail {
+  margin: 0 0 0 1.4em;
+}
+.item-name {
+  font-size: 75%;
+}
+.item-message {
+  position: relative;
+  display: inline-block;
+  padding: 0.8em;
+  background: #deefe8;
+  font-size: 16px;
+  border-radius: 60px;
+  line-height: 1.2em;
+}
+.item-message::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  left: -16px;
+  bottom: 12px;
+  border: 4px solid transparent;
+  border-right: 12px solid #deefe8;
+}
+/* トランジション用スタイル */
+.chat-enter-active {
+  transition: all 1s;
+}
+.chat-enter {
+  opacity: 0;
+  transform: translateX(-1em);
+}
+@media screen and (max-width: 568px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    padding: 0.4rem 0;
+    z-index: 999;
+  }
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .content {
+    padding: 65px 10px 0;
+  }
+  .btn {
+    display: inline-block;
+    position: absolute;
+    top: 1.9rem;
+    right: 0;
+    margin-right: 3px;
+    padding: 3px 6px;
+    border: solid 0.5px #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #btn-login {
+    display: inline-block;
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    margin-right: 6px;
+    padding: 6px 12px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #btn-login p {
+    font-size: 16px;
+  }
+  #btn-login:hover {
+    opacity: 0.7;
+  }
+  .btn p {
+    font-size: 8px;
+  }
+  .btn:hover {
+    opacity: 0.7;
+  }
+  .btn:active {
+    opacity: 0.7;
+  }
+}
